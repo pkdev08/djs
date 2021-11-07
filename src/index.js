@@ -83,7 +83,11 @@ exports.CategoryChannel = require('./structures/CategoryChannel');
 exports.Channel = require('./structures/Channel');
 exports.ClientApplication = require('./structures/ClientApplication');
 exports.ClientPresence = require('./structures/ClientPresence');
-exports.ClientUser = require('./structures/ClientUser');
+Object.defineProperty(exports, 'ClientUser', {
+  get: () => { ... },
+  configurable: true,
+  enumerable: true
+});
 exports.Collector = require('./structures/interfaces/Collector');
 exports.CommandInteraction = require('./structures/CommandInteraction');
 exports.CommandInteractionOptionResolver = require('./structures/CommandInteractionOptionResolver');
