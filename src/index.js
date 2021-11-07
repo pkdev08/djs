@@ -84,7 +84,7 @@ exports.Channel = require('./structures/Channel');
 exports.ClientApplication = require('./structures/ClientApplication');
 exports.ClientPresence = require('./structures/ClientPresence');
 Object.defineProperty(exports, 'ClientUser', {
-  get: () => { ... },
+  get: () => { return require('./structures/ClientUser'); },
   configurable: true,
   enumerable: true
 });
